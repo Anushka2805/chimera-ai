@@ -1,0 +1,12 @@
+{
+  "name": "chimera-dashboard",
+  "version": "1.0.0",
+  "description": "Flood Alert Dashboard",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./Dashboard.css",
+    "watch": "tailwindcss -i ./input.css -o ./Dashboard.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}

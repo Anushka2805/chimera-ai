@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .widget {
+    @apply bg-opacity-70 backdrop-blur-sm border border-blue-900 rounded-lg p-5 shadow-lg bg-slate-900;
+  }
+
+  .widget h3 {
+    @apply text-cyan-500 text-sm font-bold uppercase mb-4 pb-2 border-b-2 border-cyan-500 w-fit mx-auto;
+  }
+
+  .status-critical {
+    @apply text-red-500 text-4xl font-bold drop-shadow-lg;
+    text-shadow: 0 0 10px #ff4d4d;
+  }
+
+  .widget-label {
+    @apply text-sm text-blue-300 uppercase mb-1;
+  }
+
+  .data-critical {
+    @apply text-red-500 text-2xl font-bold;
+  }
+
+  .data-warning {
+    @apply text-yellow-500 text-2xl font-bold;
+  }
+
+  .data-label {
+    @apply text-xs text-blue-300;
+  }
+}
+
+.gauge-text-high {
+  @apply text-red-500 text-3xl font-bold;
+}
+
+.gauge-label {
+  @apply text-gray-300 text-sm uppercase;
+}
+
+.gauge-inner {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4d4d 0deg 290deg, #1a3a6a 290deg 360deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 15px #ff4d4d;
+}
+
+.gauge-inner::before {
+  content: '';
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: #0b1a2f;
+  border-radius: 50%;
+}
+
+.bar {
+  @apply bg-cyan-500 shadow-lg;
+  box-shadow: 0 0 8px #00bfff;
+}
